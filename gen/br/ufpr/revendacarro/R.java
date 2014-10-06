@@ -22,21 +22,36 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int lotecc1000=0x7f020001;
-        public static final int veyron164=0x7f020002;
+        public static final int agerar=0x7f020000;
+        public static final int gt2gturbo=0x7f020001;
+        public static final int gt9r=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int lotecc=0x7f020004;
+        public static final int ultimateaerott=0x7f020005;
+        public static final int venom1000twinturbo=0x7f020006;
+        public static final int venomgt2014=0x7f020007;
+        public static final int veyron164=0x7f020008;
+        public static final int veyron164grandsport=0x7f020009;
+        public static final int veyron1supersport=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
-        public static final int content_car=0x7f080002;
-        public static final int img=0x7f080001;
-        public static final int list=0x7f080000;
-        public static final int subtitle=0x7f080004;
-        public static final int txt=0x7f080003;
+        public static final int action_settings=0x7f08000b;
+        public static final int content_car=0x7f080008;
+        public static final int dt_color=0x7f080005;
+        public static final int dt_fabricator=0x7f080004;
+        public static final int dt_img=0x7f080000;
+        public static final int dt_ll_1=0x7f080001;
+        public static final int dt_model=0x7f080002;
+        public static final int dt_price=0x7f080003;
+        public static final int img=0x7f080007;
+        public static final int list=0x7f080006;
+        public static final int subtitle=0x7f08000a;
+        public static final int txt=0x7f080009;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int list_cell=0x7f030001;
+        public static final int activity_detail=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int list_cell=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -45,6 +60,7 @@ public final class R {
         public static final int action_settings=0x7f050002;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
+        public static final int title_activity_detail=0x7f050003;
     }
     public static final class style {
         /** 

@@ -1,6 +1,8 @@
-package br.ufpr.cocafanta;
+package br.ufpr.revendacarro;
 
-public class CarModel {
+import java.io.Serializable;
+
+public class CarModel implements Serializable {
 	
 	private String modelo;
 	private int foto;

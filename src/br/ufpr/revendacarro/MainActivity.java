@@ -1,25 +1,31 @@
-package br.ufpr.cocafanta;
+package br.ufpr.revendacarro;
 
-import java.util.ArrayList;
 
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 import br.ufpr.revendacarro.R;
-
 
 public class MainActivity extends Activity {
 
 	ListView list;
 	CarModel[] cars = {
-			new CarModel("Lotec C1000", R.drawable.lotecc1000 ,"Mercedes-Benz","cinza",3400000.00),
-			new CarModel("Veyron 16.4",R.drawable.veyron164, "Veyron 16.4","preta com vermeho",1500000.00)
+			new CarModel("Lotec C1000", R.drawable.lotecc ,"Mercedes-Benz","cinza",3400000.00),
+			new CarModel("Veyron 16.4",R.drawable.veyron164, "Bugatti","preta com vermeho",1500000.00),
+			new CarModel("Veyron 16.4 Grand Sport",R.drawable.veyron164grandsport, "Bugatti","branco",1120000.00),
+			new CarModel("Venom 1000 Twin Turbo",R.drawable.venom1000twinturbo, "Hennessey","verde",290000.00),
+			new CarModel("Ultimate Aero TT",R.drawable.ultimateaerott, "SSC","laranja",770000.00),
+			new CarModel("GT9-R",R.drawable.gt9r, "Porche","azul",920000.00),
+			new CarModel("911 GT2 GTurbo 1200",R.drawable.gt2gturbo, "Porche","preto",300000.00),
+			new CarModel("Agera R",R.drawable.agerar, "Koenigsegg","azul",1530000.00),
+			new CarModel("Veyron 16.4 Super Sport",R.drawable.veyron1supersport, "Bugatti","preto",2350000.00),
+			new CarModel("Venom GT",R.drawable.venomgt2014, "Hennessey","prata",1200000.00)
+			
 	};
 	
     @Override
@@ -32,8 +38,14 @@ public class MainActivity extends Activity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
         	@Override
         	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3){
-        		Toast.makeText(MainActivity.this, "Clicou na "+cars[+ arg2],
-        				Toast.LENGTH_SHORT).show();
+        		Intent it = new Intent(getBaseContext(), DetailActivity.class);
+        		Bundle params = new Bundle();
+        		params.putSerializable("car",cars[arg2]);
+        		it.putExtras(params);
+        		startActivity(it);
+        		
+        		
+        		
         	}
 
         });

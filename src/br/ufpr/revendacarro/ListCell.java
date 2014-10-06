@@ -1,6 +1,4 @@
-package br.ufpr.cocafanta;
-
-import java.text.NumberFormat;
+package br.ufpr.revendacarro;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,7 +24,6 @@ public class ListCell extends ArrayAdapter<CarModel> {
 	
 	@Override
 	public View getView(int position, View view, ViewGroup parent){
-		NumberFormat moneyFormatter = NumberFormat.getCurrencyInstance();
 		LayoutInflater inflater = context.getLayoutInflater();
 		View rowView 		= inflater.inflate(R.layout.list_cell, null, true);
 		TextView title	= (TextView) rowView.findViewById(R.id.txt);
