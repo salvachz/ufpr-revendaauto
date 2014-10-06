@@ -11,13 +11,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import br.ufpr.revendacarro.R;
 
 
 public class MainActivity extends Activity {
 
 	ListView list;
 	CarModel[] cars = {
-			new CarModel("Lotec C1000", R.drawable.lotecc1000 ,"Mercedes-Benz","cinza",3400000.00)
+			new CarModel("Lotec C1000", R.drawable.lotecc1000 ,"Mercedes-Benz","cinza",3400000.00),
+			new CarModel("Veyron 16.4",R.drawable.veyron164, "Veyron 16.4","preta com vermeho",1500000.00)
 	};
 	
     @Override
