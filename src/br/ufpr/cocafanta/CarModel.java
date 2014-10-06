@@ -2,35 +2,27 @@ package br.ufpr.cocafanta;
 
 public class CarModel {
 	
-	private String nome;
-	private String foto;
 	private String modelo;
+	private int foto;
 	private String fabricante;
 	private String cor;
-	private Float  preco;
+	private Double  preco;
 	
-	public CarModel(String nome, String foto, String modelo, String fabricante,
-			String cor, Float preco) {
+	public CarModel( String modelo, int foto, String fabricante ,String cor, Double preco) {
 		super();
-		this.nome = nome;
-		this.foto = foto;
 		this.modelo = modelo;
+		this.foto = foto;
 		this.fabricante = fabricante;
 		this.cor = cor;
 		this.preco = preco;
 	}
 
 	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public String getFoto() {
+
+	public Integer getFoto() {
 		return foto;
 	}
-	public void setFoto(String foto) {
+	public void setFoto(Integer foto) {
 		this.foto = foto;
 	}
 	public String getModelo() {
@@ -51,10 +43,10 @@ public class CarModel {
 	public void setCor(String cor) {
 		this.cor = cor;
 	}
-	public Float getPreco() {
+	public Double getPreco() {
 		return preco;
 	}
-	public void setPreco(Float preco) {
+	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
 	

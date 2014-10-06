@@ -10,16 +10,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class ListCell extends ArrayAdapter<String> {
+public class ListCell extends ArrayAdapter<CarModel> {
 	private final Activity context;
-	private final String[] refri;
-	private final Integer[] imageId;
+	private final CarModel[] car;
 	
-	public ListCell(Context context, String[] refri, Integer[] imageId) {
-		super(context, R.layout.list_cell, refri);
+	public ListCell(Context context, CarModel[] car) {
+		super(context, R.layout.list_cell, car);
 		this.context = (Activity) context;
-		this.refri = refri;
-		this.imageId = imageId;
+		this.car = car;
 	}
 	
 	@Override
@@ -28,8 +26,8 @@ public class ListCell extends ArrayAdapter<String> {
 		View rowView 		= inflater.inflate(R.layout.list_cell, null, true);
 		TextView txtTitle	= (TextView) rowView.findViewById(R.id.txt);
 		ImageView imageView	= (ImageView) rowView.findViewById(R.id.img);
-		txtTitle.setText(refri[position]);
-		imageView.setImageResource(imageId[position]);
+		txtTitle.setText(car[position].getModelo());
+		imageView.setImageResource(car[position].getFoto());
 		return rowView;
 		
 	}
